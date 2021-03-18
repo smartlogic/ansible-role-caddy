@@ -45,7 +45,7 @@
 - name: Copy main Caddy config
   template:
     src: "{{ caddy_config_file }}.j2"
-    dest: "{{ caddy_config_path }}/{{ caddy_config_file }}"
+    dest: "{{ caddy_config_path }}/Caddyfile"
     lstrip_blocks: yes
     owner: root
     group: root
